@@ -1,5 +1,18 @@
 # vpn_test
 
+## Get started
+- Define your VPN credentials as environment variables:
+
+```
+# All values MUST be placed inside 'single quotes'
+# DO NOT use these special characters within values: \ " '
+wget https://git.io/vpnsetup -O vpnsetup.sh && sudo \
+VPN_IPSEC_PSK='your_ipsec_pre_shared_key' \
+VPN_USER='your_vpn_username' \
+VPN_PASSWORD='your_vpn_password' \
+sh vpnsetup.sh
+```
+
 ## useful command
 - restart:
 ```bash
